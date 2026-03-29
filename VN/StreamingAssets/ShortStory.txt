@@ -1,0 +1,19 @@
+Narration "[setBackground(Bus_Stop_Morning) transitionScene(topDown,true)]..."
+"She's not here yet."
+"I have no idea what to expect."
+"last time I agreed to go out with <color=#FF206C><b>Miki</b></color>, she convinced me to get inside a trash container just to show her tha-" skip()
+Miki "[move(Miki,0.5)]Hi [mainCharacterName], sorry i'm late."
+Narration "It's ok, I've just arrived. "
+Miki "[flip(Miki)]I know you want to go the park but, there's something I'd like to buy downtown."
+"[flip(Miki) setCharacterImage(Miki,Casual,Smile)  move(Miki,0.3)]Do you mind coming with me?"
+choice
+{
+    "Yes"
+        hideDialogue() load(LongRoute)
+    "No"
+        Miki "Really? Thank you!"
+}
+hideDialogue() transitionBackground(leftRight,Intersection_Park_Afternoon)
+Miki "Haha here we're, downtown city."
+"[flip(Miki)]Can't wait to go shopping with my human credit paper."
+hideDialogue() transitionScene(diagonal,false,The_End)

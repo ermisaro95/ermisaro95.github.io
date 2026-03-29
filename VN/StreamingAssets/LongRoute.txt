@@ -1,0 +1,14 @@
+Narration "How about instead we take the long route through the park?"
+Miki "[setCharacterImage(Miki,Casual,Frown)] Are you sure?"
+Narration "Yeah, 2 birds 1 stone."
+Miki "..."
+"All right, let's go."
+hideDialogue() transitionBackground(leftRight,Park_No_Fence_Day)
+Narration "It sure is a beautiful day."
+Miki "..."
+Narration "Let me go to the restroom real quick."
+Miki "Yeah, no problem." exit(Miki)
+Narration "[transitionBackground(leftRight,Park_Restrooms_Day) hideDialogue()]Geez, I think I'm in trouble now."
+"I'm just embarrassed about the last time."
+"I better speak with her and sort this out."
+hideDialogue() transitionScene(diagonal,false,The_End)
